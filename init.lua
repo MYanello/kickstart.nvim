@@ -167,9 +167,12 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- [[ Basic Keymaps ]]
+-- [[ Basic Keymap ]]
 --  See `:help vim.keymap.set()`
 
+vim.keymap.set('n', 'dd', '"_dd')
+vim.keymap.set('n', 'x', '"_x')
+vim.keymap.set('v', 'd', '"_d')
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
