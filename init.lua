@@ -91,7 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -173,6 +173,7 @@ vim.opt.scrolloff = 10
 vim.keymap.set('n', 'dd', '"_dd')
 vim.keymap.set('n', 'x', '"_x')
 vim.keymap.set('v', 'd', '"_d')
+vim.keymap.set('n', '<A-v>', '<C-Q>', { noremap = true })
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
